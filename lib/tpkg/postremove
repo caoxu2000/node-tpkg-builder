@@ -1,0 +1,5 @@
+#!/bin/sh
+
+rm -rf @@directory.home/config
+rm -rf @@directory.home/node_modules
+rm -rf @@directory.home/run

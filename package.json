@@ -1,0 +1,43 @@
+{
+  "name": "tpkg-builder",
+  "description": "a build tool for node apps using tpkg (http://tpkg.github.io/)",
+  "version": "0.0.1",
+  "author": "Greg Jopa (http://gregjopa.com/)",
+  "homepage": "http://github.com/gregjopa/node-tpkg-builder",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gregjopa/node-tpkg-builder.git"
+  },
+  "bugs": {
+    "url": "http://github.com/gregjopa/node-tpkg-builder/issues"
+  },
+  "main": "lib/tpkg-builder.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "bin": {
+    "tpkg-builder": "./bin/tpkg-builder"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/gregjopa/node-tpkg-builder/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "tpkg"
+  ],
+  "dependencies": {
+    "applause": "^0.3.4",
+    "async": "^0.9.0",
+    "replace": "^0.3.0",
+    "shelljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.11",
+    "tape": "^3.2.0"
+  }
+}

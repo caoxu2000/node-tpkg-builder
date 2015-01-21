@@ -1,0 +1,26 @@
+name: @@project.name
+version: @@project.version
+package_version: 1
+maintainer: @@account.maintainer
+description: @@project.description
+dependencies:
+  - name: configrc
+    minimum_version: 1.2.5
+  - name: nodejs
+    minimum_version: @@project.nodeVersion
+    maximum_version: @@project.nodeVersion
+files:
+  file_defaults:
+    posix:
+      owner: @@account.runAsUser
+      group: @@account.runAsUserGroup
+  files:
+    - path: @@directory.cron/@@project.name.crontab
+      posix:
+        perms: 0644
+        owner: root
+      crontab: {}
+    - path: @@directory.init/@@project.name-init.sh
+      init: {}
+      posix:
+        perms: 0755

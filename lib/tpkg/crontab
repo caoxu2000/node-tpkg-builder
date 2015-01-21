@@ -1,0 +1,5 @@
+MAILTO=@@account.maintainer
+LOG_ROTATE_CONFIG=@@directory.cron/@@project.name-logrotate.conf
+LOG_ROTATE_STATE_FILE=@@directory.cron/@@project.name-logrotate.status
+
+59 23 * * * root /bin/bash -lc "logrotate --force $LOG_ROTATE_CONFIG --state $LOG_ROTATE_STATE_FILE"

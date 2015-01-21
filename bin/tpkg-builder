@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var path = require('path');
+var tpkgBuilder = require('../lib/tpkg-builder');
+
+var projectDir = path.join(__dirname, '../../..');
+var templatesDir = path.join(__dirname, '../lib/tpkg');
+
+tpkgBuilder.build(projectDir, templatesDir, function (err) {
+  if (err) console.error(err);
+  console.log('task complete');
+});

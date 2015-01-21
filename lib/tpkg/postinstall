@@ -1,0 +1,28 @@
+#!/bin/sh
+
+echo "Running @@project.name postinstall"
+
+# create run directory
+if [ ! -d "@@directory.run" ]; then
+  echo "Creating run directory"
+  mkdir -p "@@directory.run"
+  chown "@@account.runAsUser:@@account.runAsUserGroup" "@@directory.run"
+fi
+
+# create log directory
+if [ ! -d "@@directory.log" ]; then
+  echo "Creating log directory"
+  mkdir -p "@@directory.log"
+  chown "@@account.runAsUser:@@account.runAsUserGroup" "@@directory.log"
+fi
+
+# create empty log file so logrotate does not error if the tpkg was never started
+if [ ! -e "@@directory.log/@@project.name.log" ]; then
+  echo "Creating empty @@project.name.log file"
+  touch "@@directory.log/@@project.name.log"
+  chown "@@account.runAsUser:@@account.runAsUserGroup" "@@directory.log/@@project.name.log"
+fi
+
+
+cd @@directory.home
+npm install --production

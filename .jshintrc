@@ -1,0 +1,7 @@
+{
+  "node": true,
+  "camelcase": true,
+  "curly": false,
+  "newcap": true,
+  "undef": true
+}

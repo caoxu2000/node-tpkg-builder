@@ -1,0 +1,11 @@
+{
+  "account": {
+    "maintainer": "maintainer@example.com",
+    "runAsUser": "webuser",
+    "runAsUserGroup": "rolewebusers"
+  },
+  "build": {
+    "appFolder": "app",
+    "buildOutputDir": "tpkg_build"
+  }
+}
