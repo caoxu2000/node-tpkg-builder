@@ -1,7 +1,7 @@
 {
   "name": "tpkg-builder",
   "description": "a build tool for node apps using tpkg (http://tpkg.github.io/)",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "author": "Greg Jopa (http://gregjopa.com/)",
   "homepage": "http://github.com/gregjopa/node-tpkg-builder",
   "repository": {
@@ -33,7 +33,6 @@
   "dependencies": {
     "applause": "^0.3.4",
     "async": "^0.9.0",
-    "replace": "^0.3.0",
     "shelljs": "^0.3.0"
   },
   "devDependencies": {
