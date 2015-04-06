@@ -14,7 +14,7 @@
 PIDFILE="@@directory.run/@@project.name.pid"
 
 function getpid() {
-  echo `ps -C node -o pid,cmd | grep @@project.name | cut -c1-5`
+  echo `ps -C node -o pid,cmd | grep @@project.name/ | cut -c1-5`
 }
 
 
