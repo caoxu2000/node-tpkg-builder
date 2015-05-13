@@ -6,6 +6,7 @@
   },
   "build": {
     "appFolder": "app",
-    "buildOutputDir": "tpkg_build"
+    "buildOutputDir": "tpkg_build",
+    "version": "1.0.0.0"
   }
 }
