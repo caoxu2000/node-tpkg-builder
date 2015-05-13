@@ -55,6 +55,9 @@ Add a tpkg.json file to the root directory of your project. The follow fields ar
 }
 ```
 
+You can optionally define the app version in the `build.version` property in the tpkg.json file.
+If the version is not defined in tpkg.json then it uses the version in the package.json file.
+
 
 ## Config Options used from package.json
 
