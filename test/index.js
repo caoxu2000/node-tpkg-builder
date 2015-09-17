@@ -1,6 +1,6 @@
 'use strict';
 
-var test = require('tape');
+var tap = require('tap');
 var path = require('path');
 var fs = require('fs');
 var tpkgBuilder = require('../lib/tpkg-builder');
@@ -11,7 +11,7 @@ var tpkgConfig = require(path.join(projectDir, 'tpkg.json'));
 var buildSubDir = path.join(projectDir, tpkgConfig.build.buildOutputDir, 'build');
 
 
-test('tpkg build output', function (t) {
+tap.test('tpkg build output', function (t) {
   t.plan(6);
 
   tpkgBuilder.build(projectDir, templatesDir, function (err) {
