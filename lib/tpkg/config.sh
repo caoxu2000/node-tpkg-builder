@@ -4,11 +4,12 @@
 CONFIGRC=$(/home/t/bin/get_configrc)
 . $CONFIGRC
 
-# use the CLUSTER variable set by configrc, if missing use the ENVIRONMENT variable
-if [ -z $CLUSTER ]; then
-  ENV=$ENVIRONMENT
-else
-  ENV=$CLUSTER
+# use the ENVIRONMENT variable set by configrc
+ENV=$ENVIRONMENT
+
+# rename "prod" environment to "production"
+if [ $ENV = "prod" ]; then
+  ENV="production"
 fi
 
 NODE_CMD=/home/t/bin/node
