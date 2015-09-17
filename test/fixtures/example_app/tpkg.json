@@ -6,6 +6,7 @@
   },
   "build": {
     "appFolder": "app",
+    "projectFiles": ["package.json", "README.md"],
     "buildOutputDir": "tpkg_build",
     "version": "1.0.0.0"
   }

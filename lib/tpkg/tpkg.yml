@@ -5,7 +5,7 @@ maintainer: @@account.maintainer
 description: @@project.description
 dependencies:
   - name: configrc
-    minimum_version: 1.2.5
+    minimum_version: 1.2.6
   - name: nodejs
     minimum_version: @@project.nodeVersion
     maximum_version: @@project.nodeVersion
