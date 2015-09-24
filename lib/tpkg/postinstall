@@ -26,3 +26,4 @@ fi
 
 cd @@directory.home
 npm install --production
+chown -R "@@account.runAsUser:@@account.runAsUserGroup" "@@directory.home/node_modules"
