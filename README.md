@@ -50,6 +50,7 @@ Add a tpkg.json file to the root directory of your project. The follow fields ar
   },
   "build": {
     "appFolder": "app",
+    "projectFiles": ["package.json", "README.md"],
     "buildOutputDir": "tpkg_build"
   }
 }
@@ -68,7 +69,7 @@ If the version is not defined in tpkg.json then it uses the version in the packa
   "version": "1.0.0",
   "main": "app/server.js",
   "engines": {
-    "node": "0.10.36"
+    "node": "0.10.38"
   }
 }
 ```
